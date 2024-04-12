@@ -1,0 +1,122 @@
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0px;
+    margin-bottom: 1000px;
+    background-color: #eee;
+}
+
+.title{
+    padding: 10px;
+    border-bottom: 1px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    color: #4691ff;
+}
+
+.news-item h2{
+    color: #555;
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content {
+    background-color: white;
+    width: 80%;
+    margin-top: 0px;
+    margin-left: 10%;
+    padding-bottom: 250px;
+}
+
+.actualites{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.news-item {
+    width: 200px;
+    flex-direction: row;
+    color: #555;
+}
+
+.news-item img {
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.news-item p {
+    font-size: 0.7em;
+}
+
+.bottom{
+    background-color: #000000d0;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+.bottom p{
+    color: #fff;
+    font-size: .7em;
+    padding: 0px;
+    margin: 2px;
+}
+
+body presentation p{
+    text-align: justify;
+    color: #333;
+    padding: 10px;
+}
+body presentation p important{
+    color: #4691ff;
+    font-weight: bold;
+}
+entete{
+    background-color: #eee;
+    box-shadow : 0 0 10px #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;  
+}
+entete div{
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+}
+
+entete div a{
+    margin-right: 30px;
+    color: #4691ff;
+    text-decoration: none;
+    
+}
+body presentation video{
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+.barre {
+    background-color: #4691ff;
+    height: 2px;
+    width: 98.5%;
+}
+
+@media screen and (max-width: 900px) {
+    .actualites {
+        flex-direction: column !important;
+    }
+    entete div a {
+        font-size: 0.8em !important;
+    }
+    h1.title, h2.actualite {
+        text-align: center !important;
+    }
+    .video {
+        width: 90% !important;
+    }
+}
